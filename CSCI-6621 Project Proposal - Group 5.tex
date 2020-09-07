@@ -431,8 +431,13 @@ A system that can accurately determine the sentiment of a sarcastic statement wi
 In order to achieve better sarcasm detection, we plan to augment text input with features collected from Stanford Open Information Extraction, an information extraction approach which establishes relations between parts of speech in sentences which can be leveraged for better sarcasm detection. 
 
 In addition, we plan to use traditional natural language techniques, such as the term-frequency inverse document frequency metric (tf-idf) to provide deeper insight into the relationships between vocabulary with regard to our entire dataset. 
-
 We are confident that the addition of our proposed features will improve performance on the detection of sarcasm in sentences. 
+
+
+Our approach is different from traditional neural language modeling approaches because we make use of additional external information when making sarcasm judgements, rather than allowing a language model to make classifications on its own.
+
+
+Furthermore the use of external information, such as the Stanford Open Information Extraction technique, allows us to tune our approach specifically towards sarcasm detection, rather than just general natural language processing tasks.
 
 Improved sarcasm detection can then be used in conjunction with many state of the art language models to improve performance on a variety of natural language processing related tasks.
 
