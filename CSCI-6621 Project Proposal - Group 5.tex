@@ -333,7 +333,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Project Proposal: Sarcasm Sentiment Detection}
+\title{Project Proposal: Sarcasm Sentiment Analysis}
 
 
 % author names and affiliations
@@ -409,22 +409,31 @@
 
 \section{Overview}
 % no \IEEEPARstart
-Our group proposes building an improved Sentiment Analysis system. Sentiment Analysis lies within the field of Artificial Intelligence (AI), in the subfield of Natural Language Processing (NLP), and determines if the author of a piece of text is portraying a positive or negative tone. Some refer to this as emotional AI, as it is an attempt for AI to understand a complex human concept that sometimes even people have a hard time deciphering. 
+Our group proposes building an improved Sentiment Analysis system. Sentiment Analysis lies within the field of Artificial Intelligence (AI), in the sub-field of Natural Language Processing (NLP), and determines if the author of a piece of text is portraying a positive or negative tone. Some refer to this as emotional AI, as it is an attempt for AI to understand a complex human concept that sometimes even people have a hard time deciphering. 
 
-One of many shortcomings of existing Sentiment Analysis systems is that they do not understand the concept of sarcasm. Take the following sentence as an example, “I bought this mower and was really excited to test it out. After two times mowing the lawn, the front right wheel fell off. The quality of the construction here is weak at best. Here is yet another example of great craftsmanship from Company X!” 
+One of many shortcomings of existing Sentiment Analysis systems is that they do not understand the concept of sarcasm. Take the following sentence as an example: “I bought this mower and was really excited to test it out. After two times mowing the lawn, the front right wheel fell off. The quality of the construction here is weak at best. Here is yet another example of great craftsmanship from Company X!” 
 
-Using a state of the art Sentiment Analysis service from Google cloud, running the previous review through their algorithms portrays a mostly positive sentiment. This is because their algorithms do not understand that the author is employing sarcasm to convey their point. Our system will build on existing work in the field of NLP Sentiment Analysis, by applying a second layer of reason to detect sarcasm, to ultimately provide a better overall sentiment score than existing state of the art systems.
+Using a state of the art Sentiment Analysis service from Google cloud, running the previous review through their algorithms portrays a mostly positive sentiment. This is because their algorithms do not understand that the author is employing sarcasm to convey their point. 
+
+Our system will build on existing work in the field of NLP Sentiment Analysis, by applying a second layer of reason to detect sarcasm, to ultimately provide a better overall sentiment score than existing state of the art systems.
 
 \section{Rationale}
-Existing state of the art NLP sentiment analysis is relied upon extensively in all types of enterprises across a growing number of business functions.  Sentiment analysis has taken a foothold anywhere there is communication from customers or the general public.  
+Existing state of the art NLP sentiment analysis is relied upon extensively in a multitude of enterprises across a growing number of business functions.  Sentiment analysis has taken a foothold anywhere there is communication from customers or the general public.  
 
-Marking and sales teams look at social media sentiment when determining marketing strategies, optimizing product messaging, and generating leads.  Sentiment scores, along with engagement KPIs, indicate the success or failure of a marketing campaign.  Customer service organizations leverage sentiment analysis to automatically triage negative feedback to appropriate representatives.  Similarly, in call centers and service desks, modern Interactive Voice Response (IVR) solutions conduct sentiment analysis in near real time to prepare the call takers for the upcoming interaction.  IVR systems can route upset customers to specialists more equipped to deal with those interactions.  Social media managers can choose to have negative comments rise to the top of the priority queue to be dealt with immediately.  Communications teams in the public and private sectors rely on public sentiment to time press releases and inform policy decisions.  A system that can accurately identify sarcastic sentiment will, by extension, improve each of these applications.
+Marking and sales teams look at social media sentiment when determining marketing strategies, optimizing product messaging, and generating leads.  Sentiment scores, along with engagement KPIs, indicate the success or failure of a marketing campaign.  Customer service organizations leverage sentiment analysis to automatically triage negative feedback to appropriate representatives.  
+
+Similarly, in call centers and service desks, modern Interactive Voice Response (IVR) solutions conduct sentiment analysis in near real time to prepare the call takers for the upcoming customer interaction.  IVR systems can route upset customers to specialists more equipped to deal with strenuous interactions.  Social media managers can choose to have negative comments rise to the top of the priority queue to be dealt with immediately.  Communications teams in the public and private sectors rely on public sentiment to time press releases and inform policy decisions.  
+
+A system that can accurately determine the sentiment of a sarcastic statement will, by extension, enhance each of these applications.
 
 
 \section{Approach}
 In order to achieve better sarcasm detection, we plan to augment text input with features collected from Stanford Open Information Extraction, an information extraction approach which establishes relations between parts of speech in sentences which can be leveraged for better sarcasm detection. 
+
 In addition, we plan to use traditional natural language techniques, such as the term-frequency inverse document frequency metric (tf-idf) to provide deeper insight into the relationships between vocabulary with regard to our entire dataset. 
+
 We are confident that the addition of our proposed features will improve performance on the detection of sarcasm in sentences. 
+
 Improved sarcasm detection can then be used in conjunction with many state of the art language models to improve performance on a variety of natural language processing related tasks.
 
 
@@ -551,13 +560,13 @@ Improved sarcasm detection can then be used in conjunction with many state of th
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
+%\begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-insert reference here, \emph{reference info}, N~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+%\bibitem{IEEEhowto:kopka}
+%insert reference here, \emph{reference info}, N~ed.\hskip 1em plus
+%  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
 
-\end{thebibliography}
+%\end{thebibliography}
 
 
 
